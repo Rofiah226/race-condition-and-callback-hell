@@ -3,7 +3,7 @@
 
 A **race condition** is when two or more things try to use or change the same data at the same time, and the final result depends on who finishes first. 
 
-    It happens when multiple processes or threads access shared data at the same time, and the outcome depends on the timing of their execution.
+ It happens when multiple processes or threads access shared data at the same time, and the outcome depends on the timing of their execution.
 
 
 It is called a race because;
@@ -21,7 +21,7 @@ Race conditions are prevented using;
 - Proprer async handling
 
 
-      In JavaScript, operations are single-threaded, but async operations like; setTimeOut, fetch, and promises acnd still use race conditions when multple async tasks share the same variable and finish in an unpredictable order.
+    In JavaScript, operations are single-threaded, but async operations like; setTimeOut, fetch, and promises acnd still use race conditions when multple async tasks share the same variable and finish in an unpredictable order.
 
 
     # Callback Hell
@@ -40,6 +40,6 @@ Race conditions are prevented using;
      - Promises ( .then chaining)
      - Async / Await
 
-     Async / await solves callback hell by flattening nested callbacks into readable, sequential code without changing asynchronous behavior. It is more like a pause, when this step is completed move to the next step, unlike callbacks that creates nested dependencies that make code hard to readg.
+     Async / await solves callback hell by flattening nested callbacks into readable, sequential code without changing asynchronous behavior. It is more like a pause, when this step is completed move to the next step, unlike callbacks that creates nested dependencies that make code hard to read.
 
 
